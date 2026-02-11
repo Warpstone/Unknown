@@ -17,6 +17,8 @@ public class PlayerMovement: MonoBehaviour
     {
         // Ищем Rigidbody2D на этом же объекте
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();                        // Находим Аниматор
+        sprite = GetComponent<SpriteRenderer>();                // Находим Спрайт
     }
     
     // Этот метод вызывается автоматически Input System (нужно будет настроить в Unity)
@@ -34,6 +36,17 @@ public class PlayerMovement: MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
+    }
+
+    void Update()
+    {
+        float moveParam = Mathf.Abs(horizontalInput);                       // Передаем Скорость в Аниматор
+        anim.SetFloat("Speed", moveParam);                             // Mathf.Abs делает значение всегда положительным (чтобы при беге влево -1 стало 1)
+        
+        if (horizontalInput > 0)                                            // Разворачиваем героя
+            sprite.flipX = false;                                           // Смотрим вправо
+        else if (horizontalInput < 0)
+            sprite.flipX = true;                                            // Смотрим влево
     }
     
     // Update работает каждый кадр. Но для физики лучше использовать FixedUpdate
