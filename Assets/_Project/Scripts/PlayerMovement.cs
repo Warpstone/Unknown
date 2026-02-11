@@ -47,6 +47,8 @@ public class PlayerMovement: MonoBehaviour
             sprite.flipX = false;                                           // Смотрим вправо
         else if (horizontalInput < 0)
             sprite.flipX = true;                                            // Смотрим влево
+        
+        Debug.Log("Current Move Speed: " + moveParam);                      // Эта строка выводит значение в консоль Unity
     }
     
     // Update работает каждый кадр. Но для физики лучше использовать FixedUpdate

@@ -229,7 +229,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1238488945
-  m_SortingLayer: 2
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 17158f5262ca57843a61e56d70df400a, type: 3}
@@ -251,7 +251,7 @@ Transform:
   m_GameObject: {fileID: 80357891}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.6185, y: 18.6796, z: 0}
+  m_LocalPosition: {x: 20.59, y: 17.73, z: 0}
   m_LocalScale: {x: 1.6943316, y: 1.0089748, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -319,8 +319,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -875318799
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 3258abd71871a2d4bac999e046b0ecc8, type: 3}
@@ -342,7 +342,7 @@ Transform:
   m_GameObject: {fileID: 112866773}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.9, y: 1.9035, z: 0}
+  m_LocalPosition: {x: 20.93, y: 0.7, z: 0}
   m_LocalScale: {x: 1.6904, y: 1.0163, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -555,7 +555,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000f1b1d3cb71d7d149871a2f6969fd0eb1
+  m_ApplyToSortingLayers: 00000000f1b1d3cb71d7d149871a2f6969fd0eb1dff7b5fd9593adb4
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -616,6 +616,7 @@ GameObject:
   - component: {fileID: 784616836}
   - component: {fileID: 784616841}
   - component: {fileID: 784616840}
+  - component: {fileID: 784616842}
   m_Layer: 0
   m_Name: Player (idle)
   m_TagString: Untagged
@@ -742,7 +743,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1764694663
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 815424164945274260, guid: c920e8759ad10f94e879cd357b172eb6, type: 3}
@@ -914,6 +915,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 5
   jumpForce: 10
+--- !u!95 &784616842
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784616835}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f65d91b62ddc594c9d57995d7e2c8dd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &840635802
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,8 +1000,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -1324417687
-  m_SortingLayer: 4
+  m_SortingLayerID: -38406177
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 30593e69c3aca55468f1f040d6364638, type: 3}
