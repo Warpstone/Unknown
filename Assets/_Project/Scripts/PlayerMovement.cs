@@ -8,6 +8,8 @@ public class PlayerMovement: MonoBehaviour
     public float jumpForce = 10f;    // Сила прыжка
     
     private Rigidbody2D rb;          // Ссылка на компонент физики
+    private Animator anim;           // Ссылка на аниматор
+    private SpriteRenderer sprite;   // Ссылка на визуальную часть
     private float horizontalInput;   // Значение по оси А-D (влево-вправо)
     
     // Метод Start запускается один раз при старте игры
